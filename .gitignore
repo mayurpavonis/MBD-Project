@@ -38,3 +38,20 @@ codegen/
 # SimBiology backup files
 *.sbproj.backup
 *.sbproj.bak
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+*.egg-info/
+dist/
+build/
+.eggs/
+.python-version

@@ -1,0 +1,7 @@
+numpy
+pandas
+torch
+MATLAB R2025a
+Simulink
+DSP System Toolbox
+Deep Learning Toolbox
