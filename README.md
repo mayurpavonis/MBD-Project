@@ -3,7 +3,7 @@ Two-Stage Knowledge Distillation between Two Adaptive LMS-FIR Filters for Denois
 
 ## Python environment
 
-This project includes a small Python helper script `py2csv.py` that converts PyTorch `.pt` tensor files to CSV. To run it locally on Windows (cmd.exe), create and activate a virtual environment, install dependencies, and run the script.
+This project includes a small Python helper script `pt2csv.py` that converts PyTorch `.pt` tensor files to CSV. To run it locally on Windows (cmd.exe), create and activate a virtual environment, install dependencies, and run the script.
 
 Quick steps (Windows cmd.exe):
 
