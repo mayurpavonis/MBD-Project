@@ -1,6 +1,9 @@
 # MBD-Project
 Knowledge Distillation from an LMS-FIR Filter to its Compressed Representation
 
+<img width="942" height="748" alt="image" src="https://github.com/user-attachments/assets/6b476ba6-96d8-4089-b5e7-994aed8f41d5" />
+
+
 ## Python environment
 
 This project includes a small Python helper script `pt2csv.py` that converts PyTorch `.pt` tensor files to CSV. To run it locally on Windows (cmd.exe), create and activate a virtual environment, install dependencies, and run the script.
