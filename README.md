@@ -1,7 +1,7 @@
 # MBD-Project
 Knowledge Distillation from an LMS-FIR Filter to its Compressed Representation
 
-<img width="942" height="748" alt="image" src="https://github.com/user-attachments/assets/6b476ba6-96d8-4089-b5e7-994aed8f41d5" />
+<img width="822" height="652" alt="diagram drawio" src="https://github.com/user-attachments/assets/588b247b-b10c-4d23-b0f8-bcccc2ce71cc" />
 
 
 ## Python environment
