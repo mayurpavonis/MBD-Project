@@ -4,7 +4,7 @@ In real-time applications, MEMS-IMU gyroscopes suffer from constant DC biases or
 
 <img width="822" height="652" alt="diagram drawio" src="https://github.com/user-attachments/assets/588b247b-b10c-4d23-b0f8-bcccc2ce71cc" />
 
-The denoising of MEMS-IMU triaxial gyroscope signals represents a significant challenge in inertial navigation and motion sensing applications due to the inherently noisy characteristics of micro-electromechanical systems. This project proposes an innovative two-stage knowledge distillation framework that transfers knowledge from a sophisticated but computationally complex "teacher" filter to a compact "student" filter through a shallow MLP Encoder like the one commonly found in autoencoders.
+The denoising of MEMS-IMU triaxial gyroscope signals represents a significant challenge in inertial navigation and motion sensing applications due to the inherently noisy characteristics of micro-electromechanical systems. This project proposes an innovative two-stage knowledge distillation framework that transfers knowledge from a sophisticated but computationally complex "teacher" filter to a compact "student" filter through a shallow MLP Encoder like the one commonly found in vanilla autoencoders.
 
 ## Python environment
 
