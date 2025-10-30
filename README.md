@@ -1,6 +1,6 @@
 # Knowledge Distillation from an LMS-FIR Filter to its Compressed Representation
 
-In real-time applications, MEMS-IMU gyroscopes suffer from constant DC biases or offsets with band-specific noise. Classical FIR filters such as HPF, LPF, BPF, and BSF cannot denoise them fully. Manually designing a Hybrid Bandpass Filter is virtually impossible for real-time systems with complex evolving frequency spectra. Adaptive filters that solve this problem, often as pre-filters in fusion algorithms, can cost speed and memory because of their long filter lengths required to learn features.
+In real-time applications, MEMS-IMU accelerometers suffer from constant DC biases or offsets with band-specific noise. Classical FIR filters such as HPF, LPF, BPF, and BSF cannot denoise them fully. Manually designing a Hybrid Bandpass Filter is virtually impossible for real-time systems with complex evolving frequency spectra. Adaptive filters that solve this problem, often as pre-filters in fusion algorithms, can cost speed and memory because of their long filter lengths required to learn features.
 
 <img width="812" height="642" alt="mbd_diag drawio" src="https://github.com/user-attachments/assets/2aae416d-8e1c-433b-b55e-d0c5a2257d04" />
 
