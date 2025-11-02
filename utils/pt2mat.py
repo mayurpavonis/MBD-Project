@@ -15,7 +15,7 @@ def load_pt(pt_path):
     arr = t.numpy()
     return arr
 
-def extract_gx_first_K(arr, K=25):
+def extract_gx_first_K(arr, K=7):
     """Take first K windows; extract gx (axis index 0)."""
     num_windows, window_length, num_axes = arr.shape
     if num_axes < 1:
@@ -77,7 +77,7 @@ def save_mat(mat_path, varname, signal, time_vec):
     sio.savemat(mat_path, mdict, do_compression=True)
     print(f"Saved {mat_path}: variable '{varname}', sample count {signal_f32.shape[0]}")
 
-def process(pt_noisy_path, pt_GT_path, out_noisy_mat, out_GT_mat, K=25):
+def process(pt_noisy_path, pt_GT_path, out_noisy_mat, out_GT_mat, K=7):
     # Process noisy
     arr_noisy = load_pt(pt_noisy_path)
     clipped_noisy, Ln = extract_gx_first_K(arr_noisy, K=K)
@@ -101,5 +101,5 @@ if __name__ == "__main__":
         pt_GT_path    = "X_train_GT.pt",
         out_noisy_mat = "X_train_noisy_clip25.mat",
         out_GT_mat    = "X_train_GT_clip25.mat",
-        K = 25
+        K = 7
     )
