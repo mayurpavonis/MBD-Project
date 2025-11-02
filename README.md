@@ -1,11 +1,11 @@
 # Knowledge Distillation from an LMS-FIR Filter to its Compressed Representation
 
-In real-time applications, MEMS-IMU accelerometers suffer from constant DC biases or offsets with band-specific noise. Classical FIR filters such as HPF, LPF, BPF, and BSF cannot denoise them fully. Manually designing a Hybrid Bandpass Filter is virtually impossible for real-time systems with complex evolving frequency spectra. Adaptive filters that solve this problem, often as pre-filters in fusion algorithms, can cost speed and memory because of their long filter lengths required to learn features.
+In real-time applications, MEMS-IMU accelerometers are challenging to denoise due to the unknown gravity projection on the accelerometer axes. Classical time domain FIR filters such as HPF, LPF, BPF, and BSF cannot match the optimal frequency response. Manually designing a Hybrid Bandpass Filter is virtually impossible for real-time systems with complex evolving frequency spectra. Adaptive filters that solve this problem, often as pre-filters in fusion algorithms, can cost speed and memory because of their long filter lengths required to learn features.
 
-<img width="812" height="642" alt="mbd_diag drawio" src="https://github.com/user-attachments/assets/2aae416d-8e1c-433b-b55e-d0c5a2257d04" />
+<img width="915" height="723" alt="image" src="https://github.com/user-attachments/assets/50f79854-46b3-4eef-9c8e-4a2d65bcb7b8" />
 
 
-The denoising of MEMS-IMU triaxial gyroscope signals represents a significant challenge in inertial navigation and motion sensing applications due to the inherently noisy characteristics of micro-electromechanical systems. This project proposes an innovative two-stage knowledge distillation framework that transfers knowledge from a sophisticated but computationally complex "teacher" filter to a compact "student" filter through a shallow MLP (Multi-Layer Perceptron) Encoder like the one commonly found in vanilla autoencoders.
+The denoising of MEMS-IMU triaxial accelerometer signals represents a significant challenge in inertial navigation and motion sensing applications due to the inherently noisy characteristics of micro-electromechanical systems. This project proposes an innovative two-stage knowledge distillation framework that transfers knowledge from a sophisticated but computationally complex "teacher" filter to a compact "student" filter through a shallow MLP (Multi-Layer Perceptron) Encoder like the one commonly found in autoencoders.
 
 ## Python environment
 
