@@ -2,7 +2,7 @@
 
 In real-time applications, MEMS-IMU accelerometers are challenging to denoise due to the unknown gravity projection on the accelerometer axes. Classical time domain FIR filters such as HPF, LPF, BPF, and BSF cannot match the optimal frequency response. Manually designing a Hybrid Bandpass Filter is virtually impossible for real-time systems with complex evolving frequency spectra. Adaptive filters that solve this problem, often as pre-filters in fusion algorithms, can cost speed and memory because of their long filter lengths required to learn features.
 
-<img width="915" height="723" alt="image" src="https://github.com/user-attachments/assets/50f79854-46b3-4eef-9c8e-4a2d65bcb7b8" />
+<img width="811" height="641" alt="diagram drawio (1)" src="https://github.com/user-attachments/assets/1ee47add-6b3c-47ab-b442-b63b1295e847" />
 
 
 The denoising of MEMS-IMU triaxial accelerometer signals represents a significant challenge in inertial navigation and motion sensing applications due to the inherently noisy characteristics of micro-electromechanical systems. This project proposes an innovative two-stage knowledge distillation framework that transfers knowledge from a sophisticated but computationally complex "teacher" filter to a compact "student" filter through a shallow MLP (Multi-Layer Perceptron) Encoder like the one commonly found in autoencoders.
