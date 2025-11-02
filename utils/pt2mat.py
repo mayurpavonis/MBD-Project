@@ -96,7 +96,6 @@ def process(pt_noisy_path, pt_GT_path, out_noisy_mat, out_GT_mat, K=25):
     save_mat(out_GT_mat, 'gx_GT', flat_GT, time_GT)
 
 if __name__ == "__main__":
-    # Example usage: adjust paths as needed
     process(
         pt_noisy_path = "X_train_noisy.pt",
         pt_GT_path    = "X_train_GT.pt",
