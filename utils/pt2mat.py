@@ -96,10 +96,11 @@ def process(pt_noisy_path, pt_GT_path, out_noisy_mat, out_GT_mat, K=7):
     save_mat(out_GT_mat, 'gx_GT', flat_GT, time_GT)
 
 if __name__ == "__main__":
+    # when run from the project root, the .pt files live in the `datasets/` folder
     process(
-        pt_noisy_path = "X_train_noisy.pt",
-        pt_GT_path    = "X_train_GT.pt",
-        out_noisy_mat = "X_train_noisy_clip25.mat",
-        out_GT_mat    = "X_train_GT_clip25.mat",
+        pt_noisy_path = os.path.join('datasets', 'X_test_noisy.pt'),
+        pt_GT_path    = os.path.join('datasets', 'X_test_GT.pt'),
+        out_noisy_mat = os.path.join('datasets', 'X_test_noisy_clip7.mat'),
+        out_GT_mat    = os.path.join('datasets', 'X_test_GT_clip7.mat'),
         K = 7
     )
